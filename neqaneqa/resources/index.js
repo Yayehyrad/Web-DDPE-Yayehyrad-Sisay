@@ -2,10 +2,10 @@ function sayHello() {
     alert("Hello guest")
  }
  function over() {
-    document.write("Mouse Over");
+    alert("Mouse Over");
  }            
  function out() {
-    document.write("Mouse Out");}
+    document.write("Subm");}
 function myFunction(val) {
         document.getElementById("demo").innerHTML = val; 
       }
