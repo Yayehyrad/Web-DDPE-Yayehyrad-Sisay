@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+     
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="keywords" content="Life Hacks, Jack Ma - How I Overcame Failure, 24 Hours A Day">
+        <meta name="author" content="Yayehyrad sisay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>
+		lifehacks
+	</title>
+        <style>
+        </style>
+</head>
+<body >
+<table align="center" width=85%>
+     <thead >
+	  <th align="left" width= >
+    <img src="../../resources/images/logo_gold.png" alt="" width=60px> 
+          </th>
+               <td align="left" width="50%">
+               <details>
+		<summary>wikitechy</summary>
+	       </details>
+                 </td>
+              
+                 <th width =>
+   		 <a href=""> Podcasts </a>|</th><th>
+		 <a href=""> Articles </a>|</th><th>
+                 <a href=""> Ideas </a>|</th><th>
+                 <a href=""> About Us </a>|</th><th>
+		 <a href=""> Contact Us</a></th> 
+        	 <tr>     
+</thead>
+</table><hr>
+	<table align="center" width=85% > 
+        <tr><th colspan=3 align="right"><a href="#bottum">Go To bottum</a><th></tr>
+	<tr>
+	<td colspan=2 width = 70%>
+              <h1>Eric Hoffer and the Power of Self-Education</h1></td><td><h2>Recent Posts</h2></td>
+        <tr>
+                <td colspan=2 width=800px  id="imgpar">
+                
+                <div id="img">
+              <img src="../../resources/images/banners/life1.jpg" />
+
+             
+                 </div>
+
+               <button id="btn1" onclick="swap()">swap with vid</button>
+               
+               <p>I recently read The True Believer by Eric Hoffer. 
+               Its a book about how mass movements evolve. 
+               With a lot of historical examples, the book explains 
+               the patterns and common threads among them. Its an 
+               insightful book and reading it was a great learning experience for me.</p>
+        
+                 
+	</td>
+        <td valign="top" rowspan = 2> 
+            <ul><li><h4>Articles</h4></li>
+                    <ul><li>The Importance of Goals, Especially During Difficult Times</li> 
+                        <li>5 Steps to Discovering Your Life Purpose In 2022!</li> 
+		    </ul>
+                 <li><h4>Ideas</h4></li>
+                 <ul><li>10 Books to Read in The Fall</li> 
+                 <li>Top Web Development Projects Ideas</li></ul></ul> 
+	<h2>Most Viewed Articls</h2>
+	<ol type="I"> <li>
+             Instant Gratification Is Stopping You From Reaching Your Goals!</li><li>
+             Stop Juggling Between Work And Life</li> 
+         <h2>IP Project Winners</h2><pre>
+---------------------------------
+Rank                        Award
+---------------------------------
+First   Free hosting and support 
+Second  5GB Mobile Data 
+Third   1GB Mobile Data 
+---------------------------------- </pre>
+	</td>
+	</tr><tr><td> <img src="asdasd.png" alt="The True Believer book cover" width=100px length=100px> 
+        </td>
+                 <td><p>What I�d like to share with you here is not the content of the book, though. 
+                 Instead, I�d like to share with you about the author.</p>
+                  <p>You see, I didn�t know about Eric Hoffer before. But I imagined he must be a famous professor from a well-known university. I mean, what else could explain the depth of his insights? The True Believer is an influential book. Here is how <a href="">Wikipedia</a> put it... <a href="">read</a>
+                   </p> <tr><td><colspan=3><a href="">more..<a><td></tr>
+                  
+	<tr>
+	<td colspan=2 width = 70% id="vidpar"><hr>
+              <h3>New Podcast </h3><h2> 
+		Jack Ma - How I Overcame Failure
+                <div id="new"></div>
+		</h2>
+  		 <audio controls id="aud"><source src="../../resources/audio/Jack Ma - How I Overcame Failure.mp3"></audio>
+                   <button id="btn" onclick="delet()">delete audio</button>
+		<hr>
+                <h3>Pick of The Week </h3><h2>24 Hours A Day</h2>
+		<video controls width=800px id="vid"><source src="../../resources/video/24_HOURS.mp4"></audio>
+		</td>
+		<tr><td colspan=3>
+			<hr></td>
+		</tr>
+ 		<tr><td colspan=2>Follow Us On: <a href="">Facebook <a>|<a href=""> Twitter</a></td>
+                    <td><a href="">   Privacy | Terms of Use</a></td> 
+
+		</tr><tr><td colspan=3 align="center">Copyright � AASTU SEng 2021, All Rights Reserved
+                            </td></tr>
+         
+ 	</thead>
+	<table>
+        
+<p  id="demo"></p>
+<script>
+        function swap() {
+          const vx = document.querySelector("#imgpar");
+          const x = document.querySelector("#img");
+          const z = x.children[1];
+          var y = document.querySelector('#vidpar');
+          const r = y.children[8]; 
+          vx.insertBefore(r , vx.children[0])
+          y.insertBefore(x , y.children[8])
+          const btn1 = document.getElementById('btn1');
+          btn1.parentNode.removeChild(btn1)
+          
+        }
+        function delet(){
+           const da = document.getElementById('aud');
+           da.parentNode.removeChild(da);  
+           const btn=document.getElementById('btn');
+           btn.parentNode.removeChild(btn) 
+           const a = document.createElement('p')
+           const b = document.createTextNode('deleted')
+           const c = document.getElementById('vidpar')
+           const d = document.createElement('div')
+           a.appendChild(b);
+           c.insertBefore(a ,c.children[3]).style.fontSize ="2em";
+           c.children[3].style.color ="red";
+           c.insertBefore(d ,c.children[4])
+        }
+        </script>
+        
+</body>
+
+</html>
