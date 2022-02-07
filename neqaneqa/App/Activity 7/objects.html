@@ -54,9 +54,16 @@
                         <input type="number" name="phone" id="p"><br>
                         <label for="age">age</label><br>
                         <input type="number" name="age" id="age"><br>
-                        <button type ="submit" onclick="p.print()" id="w">submit</button>
+                        <button type ="submit" onclick="data()" >submit</button>
                 </form>
-                <p id="display"></p>
+                <div id="display">
+                        <div>
+                                <div>  <span id="nameof"></span></div>
+                                <div>  <span id="phoneof"></span></div>
+                                <div>   <span id="ageof"></span></div>
+                                <button  onclick="display()">show</button>
+                             </div>
+                </div>
                 <td colspan=2 width=800px  id="imgpar">
                 
                 <div id="img">
@@ -130,19 +137,39 @@ Third   1GB Mobile Data
 <p  id="demo"></p>
 <script>
         
-        let Register = function(name , phone , age){
-          this.name= name
-          this.phone= phone
-          this.age =  age
-}
-let name=document.getElementById('f').value;
-          let phone=document.getElementById('n').value;
-          let age = document.getElementById('age').value
+        function data(){
+        function register(name , phone , age){
+          this.name= name;
+          this.phone= phone;
+          this.age =  age;    
+        }          
+          var name=document.getElementById('f').value;
+          var phone=document.getElementById('n').value;
+          var age= document.getElementsById('age').value;
 
+   const r = new register(name,phone,age);
+    
+   localStorage.setItem("a",r.name);
+   localStorage.setItem("b",r.phone);
+   localStorage.setItem("c",r.age);  
+}
+ 
+   function display()
+{
+var n = localStorage.getItem("a");
+var p = localStorage.getItem("b");
+var a = localStorage.getItem("c");
+document.getElementById("nameof").innerHTML = "name"+n;
+document.getElementById("ageof").innerHTML ="age"+p;
+document.getElementById("phoneof").innerHTML ="phone" + a;
+alert('saved') 
+}
+
+/*
 let p = new Register(name , phone , age);
       Register.prototype.print =function(){
       document.getElementById("display").innerHTML=  `<h1>New Added Form</h1><h1>Full Name: ${this.name}</h1><h1>Age: ${this.age}</h1><h1>PhoneNo.: ${this.phone}</h1>`;
-      }
+      }*/
         </script>
         
 </body>
